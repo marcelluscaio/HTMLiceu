@@ -1,0 +1,13 @@
+@import url("reset.css");
+
+*{
+   box-sizing: border-box;
+}
+
+
+.header{
+   background-image: url("../img/Novo\ ProjetoMulher.png"), url("../img/matrix.png"), url("../img/Novo\ Projeto\ \(2\).jpg");
+   background-size: cover, cover, cover;
+   background-repeat: no-repeat, no-repeat, no-repeat;
+   height: 100vh;
+}
