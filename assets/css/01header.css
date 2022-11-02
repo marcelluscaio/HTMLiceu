@@ -1,3 +1,51 @@
+.header--top{
+   background-color: var(--white-transparent);
+   backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(3px);
+   height: 11vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: .75em 1em;
+}
+
+.header--top *{
+   color: var(--white);
+}
+
+.header--top--text{
+   font-weight: 600;
+   font-size: var(--size-md);
+   color: var(--blue);
+}
+
+.header--top--text::first-letter{
+   color: var(--green);
+   font-size: var(--size-lg);
+   font-weight: 700;
+}
+
+.header--top--button{
+   text-decoration: none;
+   padding: .75em 1em;
+   display: block;
+   border-radius: 20px;
+   font-size: var(--size-sm);
+   
+   background-image: linear-gradient(45deg, var(--green), var(--blue), var(--green), var(--blue), var(--green));
+   background-size: 400%;
+   animation-name: bg-animation;
+   animation-duration: 13s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes bg-animation{
+  0% {background-position:left}
+  50% {background-position:right}
+  100%{background-position:left}
+}
+
 .header--text{
    background-image: linear-gradient(-45deg, var(--black) -50%, var(--white) 115%);
    color: transparent;
@@ -5,6 +53,7 @@
    -webkit-background-clip: text;
    font-weight: 700;   
    text-align: center;
+   margin: 1rem 1.5rem 0;
 
 }
 

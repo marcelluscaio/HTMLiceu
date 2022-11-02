@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/00style.css">
+   <title>HTMLiceu | Sua escola de tecnologia</title>
+</head>
+<body>
+   <header class="header--top">   
+      <span class="header--top--text">Liceu</span>
+      <a class="header--top--button" href="assets/pages/matriculese.html">Faça sua matrícula</a>
+   </header>
+   <main class="matriculese-main">
+      <form class="matriculese-main--form">
+         <label class="matriculese-main--form--label" for="nome">Nome</label>
+         <input type="text" name="nome" id="nome" min="2" placeholder="Digite seu nome" required>
+
+         <label class="matriculese-main--form--label" for="cpf">CPF</label>
+         <input type="text" name="cpf" id="cpf" min="11" max="14" placeholder="Digite seu CPF" required>
+
+         <label class="matriculese-main--form--label" for="senha">Senha</label>
+         <input type="password" name="senha" id="senha" min="6" max="12" placeholder="Escolha uma senha" required>
+
+         <label class="matriculese-main--form--label" for="confirma">Confirmar senha</label>
+         <input class="password" name="confirma" id="confirma" min="6" max="12" placeholder="Confirme a senha" required>
+
+         <label class="matriculese-main--form--label" for="email">E-mail</label>
+         <input class="email" name="email" id="email" min="8" placeholder="Digite seu melhor e-mail" required>
+
+         <label class="matriculese-main--form--label" for="cep">CEP</label>
+         <input class="text" name="cep" id="cep" min="8" max="9" placeholder="Digite seu cep" required>
+
+         <label class="matriculese-main--form--label" for="logradouro">Logradouro</label>
+         <input id="logradouro" placeholder="Rua Bonita" readonly>
+
+         <label class="matriculese-main--form--label" for="cidade">Cidade</label>
+         <input id="cidade" placeholder="Olinda" readonly>
+
+         <label class="matriculese-main--form--label" for="estado">Estado</label>
+         <input id="estado" placeholder="Pernambuco" readonly>
+
+         <label class="matriculese-main--form--label" for="idade">Idade</label>
+         <input type="date" name="idade" id="idade" required>
+
+         <input type="checkbox" name="concordo" id="concordo">
+         <label class="matriculese-main--form--label" for="concordo">Declaro que li e concordo com os termos e condições</label>
+
+         <input type="submit">
+      </form>
+   </main>
+   <footer>
+   </footer>   
+</body>
+</html>

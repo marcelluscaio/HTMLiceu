@@ -4,14 +4,16 @@
 :root{
    --font: 'Fira Code', monospace;
 
-   --size-sm: 0.75rem;
-   --size-md: 1.75rem;
-   --size-lg: 3rem;
+   --size-sm: 0.875rem;
+   --size-md: 1.5rem;
+   --size-lg: 2.25rem;
 
    --green: #0B360B;
    --blue: #0B0B36;
    --black: #000F0F;
+   --black-transparent: #000F0F66;
    --white: #E6FFFF;
+   --white-transparent: #E6FFFF66;
 }
 
 *{
@@ -42,14 +44,21 @@ body{
    background-color: var(--black);
 }
 
+::selection{
+   color: var(--black);
+   background: var(--white-transparent);
+   -webkit-background-clip: unset;
+   background-clip: unset;
+
+}
+
 .header{
    background-image: url("../img/Novo\ ProjetoMulher.png"), url("../img/matrix.png"), url("../img/Novo\ Projeto\ \(2\).jpg");
    background-size: 175%, cover, cover;
    background-repeat: no-repeat, no-repeat, no-repeat;
    background-position: bottom, center, center;
    height: 100vh;
-   box-shadow: inset 0 -10px 10px 0 var(--black);
-   padding: 1.75em 1.5em;
+   box-shadow: inset 0 -10px 10px 0 var(--black);   
 }
 
 @media screen and (min-width: 800px) {
