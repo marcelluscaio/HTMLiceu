@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("01header.css");
+@import url("matriculese/00form.css");
 
 :root{
    --font: 'Fira Code', monospace;
@@ -49,7 +50,6 @@ body{
    background: var(--white-transparent);
    -webkit-background-clip: unset;
    background-clip: unset;
-
 }
 
 .header{

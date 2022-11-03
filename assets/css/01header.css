@@ -30,7 +30,7 @@
    text-decoration: none;
    padding: .75em 1em;
    display: block;
-   border-radius: 20px;
+   border-radius: 2em;
    font-size: var(--size-sm);
    
    background-image: linear-gradient(45deg, var(--green), var(--blue), var(--green), var(--blue), var(--green));
@@ -54,6 +54,7 @@
    font-weight: 700;   
    text-align: center;
    margin: 1rem 1.5rem 0;
+   line-height: calc(4vw + 1rem);
 
 }
 
