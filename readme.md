@@ -1,14 +1,24 @@
 # HTMLiceu - Technology school
 
 
-<img src="assets/img/screencapture-marcelluscaio-github-io-pagina-taty-fotografia-2022-10-28-17_10_34.png">
-
+<img src="assets/img/show1.png">
+<img src="assets/img/show2.png">
+<img src="assets/img/show3.png">
+<img src="assets/img/show4.png">
 
 ### Highlights:
-* :eye_speech_bubble: Parallax effect
-* :mage: Infinite carousel made with pure JS (no libraries used)
-* :art: Image gallery using CSS Grid (with text overlay on hover)
-* :gear: Different transition timing for hover on and off
+* :eye_speech_bubble: Built with mobile-first technique
+* :mage: Fluid typography
+* :art: Form validation using HTML and JavaScript
+* :gear: Three-layer-background
+* :sth: Hide/show password with icon change 
+* :sth: Scrollbar styling
+
+### Still to come:
+* :eye_speech_bubble: Automatic age fill
+* :mage: Fetch adress through CEP
+* :art: CPF validation
+* :gear: Parallax effect on background
 
 ### Tecnologies used:
 
