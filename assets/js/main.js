@@ -46,6 +46,14 @@ function comparesPassword(campo){
    };   
 };
 
+function calculatesAge(campo){
+   //build
+};
+
+function validatesCPF(campo){
+   //build
+};
+
 /* const errorType = [
     'valueMissing',
     'typeMismatch',
@@ -123,3 +131,4 @@ form.addEventListener("submit", (e) => {
     const finalMessage = document.querySelector(".success-message");
     finalMessage.innerText = `Parabéns ${listaRespostas.nome}. Você está matriculado` 
 })
+
