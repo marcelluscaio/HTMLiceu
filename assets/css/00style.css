@@ -54,7 +54,7 @@ body{
 }
 
 .header{
-   background-image: url("../img/Novo\ ProjetoMulher.png"), url("../img/matrix.png"), url("../img/Novo\ Projeto\ \(2\).jpg");
+   background-image: url("../img/Novo\ ProjetoMulher.png"), url("../img/Matrix.png"), url("../img/Novo\ Projeto\ \(2\).jpg");
    background-size: min(175%, 650px), cover, cover;
    background-repeat: no-repeat, no-repeat, no-repeat;
    background-position: bottom, center, center;
