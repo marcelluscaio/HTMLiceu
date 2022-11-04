@@ -20,10 +20,20 @@
    color: var(--blue);
 }
 
-.header--top--text::first-letter{
+.highlight{
    color: var(--green);
    font-size: var(--size-lg);
    font-weight: 700;
+}
+
+.header--top--text::before{
+   content: "<";   
+   font-size: var(--size-lg);
+}
+
+.header--top--text::after{
+   content: ">";
+   font-size: var(--size-lg);
 }
 
 .header--top--button{
