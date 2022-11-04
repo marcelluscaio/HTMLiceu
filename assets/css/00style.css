@@ -1,13 +1,14 @@
 @import url("reset.css");
 @import url("01header.css");
+@import url("02cards.css");
 @import url("matriculese/00form.css");
 
 :root{
    --font: 'Fira Code', monospace;
 
-   --size-sm: clamp(0.625rem, 3vw, 0.875rem);
-   --size-md: 1.5rem;
-   --size-lg: 2.25rem;
+   --size-sm: clamp(0.75rem, 3vw, 0.875rem);
+   --size-md: clamp(1rem, 4vw,1.5rem);
+   --size-lg: clamp(1.625rem, 5vw, 5rem);
 
    --green: #0B360B;
    --blue: #0B0B36;
