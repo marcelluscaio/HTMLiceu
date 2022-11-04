@@ -10,7 +10,16 @@ campos.forEach(campo => {
 function validaCampo(campo){
    let errorType = "";
    let errorMessage = "";
+   campo.setCustomValidity("");
    let errorField;
+
+   switch(campo.name){
+      case "confirma":
+         comparesPassword(campo);
+         break;
+   }
+
+
    if(!campo.checkValidity()){
       for(key in campo.validity){
          if(campo.validity[key]){
@@ -18,7 +27,7 @@ function validaCampo(campo){
             errorMessage = messages[campo.name][errorType];
          }
       }
-   }   
+   }
    if(campo.name !== "concordo"){
       errorField = campo.nextElementSibling;
    } else {
@@ -27,6 +36,15 @@ function validaCampo(campo){
    errorField.innerText = errorMessage;
 
 }
+
+function comparesPassword(campo){
+   let confirmPassword = campo.value;
+   
+   const password = document.querySelector("#senha");
+   if(!(password.value === confirmPassword)){
+      campo.setCustomValidity("As senhas informadas são diferentes")
+   };   
+};
 
 /* const errorType = [
     'valueMissing',
@@ -88,3 +106,20 @@ icon.addEventListener("click", () => {
    passwordField.type === "password" ? passwordField.type = "text" : passwordField.type = "password";
 
 });
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const listaRespostas = {
+        "nome": e.target.elements.nome.value,
+        "email": e.target.elements.email.value,
+        "cpf": e.target.elements.cpf.value,
+        "idade": e.target.elements.idade.value,
+        "senha": e.target.elements.senha.value
+    }
+
+    localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+    const finalMessage = document.querySelector(".success-message");
+    finalMessage.innerText = `Parabéns ${listaRespostas.nome}. Você está matriculado` 
+})

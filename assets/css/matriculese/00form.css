@@ -147,6 +147,11 @@
    animation-iteration-count: infinite;
 }
 
+.final-message{
+   color: var(--white);
+   text-align: center;
+}
+
 @media screen and (min-width: 800px){
    .matriculese-main--form{
       padding: 3.25em;
