@@ -5,7 +5,7 @@
 :root{
    --font: 'Fira Code', monospace;
 
-   --size-sm: 0.875rem;
+   --size-sm: clamp(0.625rem, 3vw, 0.875rem);
    --size-md: 1.5rem;
    --size-lg: 2.25rem;
 
