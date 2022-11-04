@@ -15,50 +15,71 @@
       <a class="header--top--button disabled" href="#">Faça sua matrícula</a>
    </header>
    <main class="matriculese-main">
+      <h1 class="title matriculese--title">Preencha os campos abaixo para fazer sua matrícula</h1>
       <form class="matriculese-main--form">
          <div class="border top-left-corner"></div>
          <div class="border top-right-corner"></div>
          <div class="border bottom-right-corner"></div>
          <div class="border bottom-left-corner"></div>
+
          <label class="matriculese-main--form--label center" for="nome">Nome</label>
-         <input class="matriculese-main--form--write" type="text" name="nome" id="nome" min="2" placeholder="Digite seu nome" required>
+         <input class="matriculese-main--form--write" type="text" name="nome" id="nome" minlength="2" placeholder="Digite seu nome" required>
+         <span class="error-message"></span>
+
+         <label class="matriculese-main--form--label center" for="idade">Data de Nascimento</label>
+         <input class="matriculese-main--form--write" type="date" name="nascimento" id="nascimento" required>                  
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="idade">Idade</label>
-         <input class="matriculese-main--form--write" type="date" name="idade" id="idade" required>
+         <input class="matriculese-main--form--write" type="text" name="idade" id="idade" readonly>
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="email">E-mail</label>
-         <input class="matriculese-main--form--write" type="email" name="email" id="email" min="8" placeholder="Digite seu melhor e-mail" required>
+         <input class="matriculese-main--form--write" type="email" name="email" id="email" minlength="8" placeholder="Digite seu melhor e-mail" required>
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="cpf">CPF</label>
          <input class="matriculese-main--form--write" type="text" name="cpf" id="cpf" min="11" max="14" placeholder="Digite seu CPF" required>
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="senha">Senha</label>
-         <input class="matriculese-main--form--write" type="password" name="senha" id="senha" min="6" max="12" placeholder="Escolha uma senha" required>
+         <div class="password-container">
+            <input class="matriculese-main--form--write" type="password" name="senha" id="senha" minlength="6" maxlength="12" placeholder="Escolha uma senha" required>  
+            <span class="error-message"></span>       
+            <i class="icon"></i>
+         </div>         
 
          <label class="matriculese-main--form--label center" for="confirma">Confirmar senha</label>
-         <input class="matriculese-main--form--write" type="password" name="confirma" id="confirma" min="6" max="12" placeholder="Confirme a senha" required>
+         <input class="matriculese-main--form--write" type="password" name="confirma" id="confirma" minlength="6" maxlength="12" placeholder="Confirme a senha" required>
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="cep">CEP</label>
          <input class="matriculese-main--form--write" type="text" name="cep" id="cep" min="8" max="9" placeholder="Digite seu cep" required>
+         <span class="error-message"></span>
 
-         <label class="matriculese-main--form--label center" for="logradouro">Logradouro</label>
+         <label class="matriculese-main--form--label center" for="logradouro">Endereço</label>
          <input class="matriculese-main--form--write" id="logradouro" placeholder="Rua Bonita" readonly>
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="cidade">Cidade</label>
          <input class="matriculese-main--form--write" id="cidade" placeholder="Olinda" readonly>
+         <span class="error-message"></span>
 
          <label class="matriculese-main--form--label center" for="estado">Estado</label>
          <input class="matriculese-main--form--write" id="estado" placeholder="Pernambuco" readonly>
+         <span class="error-message"></span>
 
          <fieldset class="check-section">
-            <input class="matriculese-main--form--check" type="checkbox" name="concordo" id="concordo">
+            <input class="matriculese-main--form--check" type="checkbox" name="concordo" id="concordo" required>
             <label class="matriculese-main--form--label agree" for="concordo">Declaro que li e concordo com os termos e condições</label>
-         </fieldset>
+         </fieldset>         
+         <span class="error-message"></span>
 
          <input class="matriculese-main--form--button" type="submit">
       </form>
    </main>
    <footer>
-   </footer>   
+   </footer>
+   <script src="../js/main.js"></script> 
 </body>
 </html>
