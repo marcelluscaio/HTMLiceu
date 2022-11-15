@@ -1,0 +1,13 @@
+.footer{
+   background-color: var(--white-transparent);
+   height: 10vh;
+   backdrop-filter: brightness(0.3);
+}
+
+.footer--content{
+   color: var(--black);
+   text-align: center;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
