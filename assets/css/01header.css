@@ -65,7 +65,7 @@
    text-align: center;
    margin: 1rem 1.5rem 0;
    line-height: calc(4vw + 1rem);
-
+   position: relative;
 }
 
 .header--title{
@@ -76,4 +76,32 @@
 
 .header--subtitle{
    font-size: calc(4vw + 0.5rem);
+}
+
+.header--bg{
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;  
+
+   background-repeat: no-repeat; 
+}
+
+.bg1{
+   background-image:  url("../img/bg1.png");
+   background-position: bottom;
+   background-size: min(175%, 650px);
+}
+
+.bg2{
+   background-image: url("../img/bg2.png");
+   background-position: center;
+   background-size: cover;
+}
+
+.bg3{
+   background-image: url("../img/bg3.jpg") ;
+   background-position: center;
+   background-size: cover;
 }
