@@ -89,9 +89,9 @@
 }
 
 .bg1{
-   background-image:  url("../img/bg1.png");
-   background-position: bottom;
-   background-size: min(175%, 650px);
+   background-image: url("../img/bg3.jpg") ;
+   background-position: center;
+   background-size: cover;
 }
 
 .bg2{
@@ -101,7 +101,7 @@
 }
 
 .bg3{
-   background-image: url("../img/bg3.jpg") ;
-   background-position: center;
-   background-size: cover;
+   background-image:  url("../img/bg1.png");
+   background-position: bottom;
+   background-size: clamp(250px, 55%, 1000px);
 }
